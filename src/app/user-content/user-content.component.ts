@@ -13,7 +13,6 @@ export class UserContentComponent implements OnInit {
   username:string;
   userDetails;
   userRepo;
-  p:number=1
   mode='repositary';
   public repocount;
   public followercount

@@ -25,7 +25,6 @@ export class FollowingContentComponent implements OnInit {
     this.activateroute.params.subscribe(params => {
       this.username=this.activateroute.snapshot.params.id;
     this.repo.findFollowing(this.username,this.config.currentPage).subscribe((data)=>{
-      console.log(data)
       this.userfollowing=data;
     })
   })
@@ -36,11 +35,11 @@ export class FollowingContentComponent implements OnInit {
   }
 
   pageChanged(event){
-    console.log(event);
+
   
     this.config.currentPage=event;
     this.repo.findFollowing(this.username,this.config.currentPage).subscribe((data)=>{
-      console.log(data)
+    
       this.userfollowing=data;
     })
   }

@@ -27,7 +27,7 @@ export class RepoContentComponent implements OnInit {
     this.activateroute.params.subscribe(params => {
       this.username=this.activateroute.snapshot.params.id;
     this.repo.finduserRepo(this.username,this.config.currentPage).subscribe((data)=>{
-      console.log(data)
+      
       this.userRepo=data;
     })
   })
@@ -39,14 +39,14 @@ export class RepoContentComponent implements OnInit {
   ngOnInit(): void {
     
     this.config.totalItems=this.RepoCount
-    console.log(this.config.totalItems)
+    
   }
   pageChanged(event){
     console.log(event);
   
     this.config.currentPage=event;
     this.repo.finduserRepo(this.username,this.config.currentPage).subscribe((data)=>{
-      console.log(data)
+     
       this.userRepo=data;
     })
   }
