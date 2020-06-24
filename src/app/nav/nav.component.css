@@ -1,0 +1,39 @@
+.filter-select{
+  margin-top: 20px;
+  margin-right:50% ;
+  top:30px;
+  background-color: white;
+  width:auto;
+  list-style: none;
+  font-size: 1.1em;
+  color: rgb(105, 105, 105);
+  /* border: 1px solid black; */
+  border-top: none;
+  position: absolute;
+  max-height:450px ; 
+   overflow-y: auto;
+  background: #fff;
+  z-index: 1000;
+}
+.filter-select-list img {
+  margin-right: 30px;
+}
+
+.filter-select-list:hover {
+  background:  #C0C0C0;
+  color: #fff
+}
+
+.filter-select-list {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.navbar-light .navbar-brand:hover {
+  color:white;
+}
+.navbar-brandstyle{
+  color:white;
+  text-decoration: none !important;
+  
+}

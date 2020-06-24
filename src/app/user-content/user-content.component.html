@@ -1,0 +1,22 @@
+<app-nav></app-nav>
+<div class="row">
+    <div class="col-md-3 offset-md-1 details" >
+        <div class="card user-detail">
+        <img class="image-styling" src="{{userDetails.avatar_url}}">
+        <span class="name-styling">{{userDetails.login}}</span>
+
+    </div>
+</div>
+    <div class="col-md-7 offset-md-1 mt-3">
+  <span class="mode" (click)=modeRepo()>Repositary</span>&nbsp;<span class="count mode mr-3">{{userDetails.public_repos}}</span>&nbsp;&nbsp;<span class="mode" (click)=modeg()>Followers</span>&nbsp;<span class="count mode mr-3">{{userDetails.followers}}</span>&nbsp;&nbsp;<span class="mode" (click)=modef()>Following</span>&nbsp;<span class="count mode mr-3">{{userDetails.following}}</span>
+        <hr>
+        <app-repo-content *ngIf="mode=='repositary'" [RepoCount]="repocount"></app-repo-content>
+        <app-follower-content *ngIf="mode=='follower'" [FollowerCount]="followercount"></app-follower-content>
+        <app-following-content *ngIf="mode=='following'" [FollowingCount]="followingcount"></app-following-content>
+       
+            
+
+    </div>
+    
+
+</div>

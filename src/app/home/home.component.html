@@ -1,0 +1,30 @@
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand navbar-brandstyle" href="#">FindurRepo</a>
+        </nav>
+    <div class="row">
+     <div class="col-md-6 offset-md-3">   
+       
+          <p class="heading"><strong> Search your Github profile </strong> </p>
+          
+         
+            <form class="form-group " [formGroup]="profile">    
+           <input formControlName="profileName" type="text" id="keyword" class="form-control padding" placeholder="search for profile..." autofocus/>
+           <ul  *ngIf="profile.value.profileName" class="filter-select">
+            <li *ngFor="let result of results" routerLink="user/{{result.login}}" class="filter-select-list"><img src="{{result.avatar_url}}" alt="" width="50" height="50"><span class="artist-name">
+              {{result.login}}</span></li>
+          
+          </ul>
+           </form>
+    
+          
+
+     </div>
+
+    </div>
+
+
+
+
+
+

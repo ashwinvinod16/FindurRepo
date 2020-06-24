@@ -1,0 +1,7 @@
+
+<div *ngFor="let repo of userRepo|paginate: config " class="card card-style">
+ <a href="{{repo.html_url}}"><h3 >{{repo.name}}</h3></a>
+<span><span>●</span>&nbsp;&nbsp;<span>{{repo.language}}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>updated on {{repo.updated_at|date:'dd MMMM'}}</span></span>
+<span ><i class="far fa-eye"></i>&nbsp;&nbsp;{{repo.watchers_count}}</span>
+</div>
+<pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>

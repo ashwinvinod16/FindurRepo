@@ -1,0 +1,20 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand navbar-brandstyle" href="#">FindurRepo</a>
+
+    <div class="filter-wrapper ml-auto">
+        <div class="keyword-wrapper">
+        <form class="form-group form-inline my-2 my-lg-0" [formGroup]="profile">    
+       <input formControlName="profileName" type="text"  class="keyword form-control mr-sm-2 "placeholder="search for Profile..." autofocus/>
+       <ul  *ngIf="profile.value.profileName" class="filter-select">
+        <li *ngFor="let result of results" [routerLink]="'/user/' + result.login"  class="filter-select-list"><img src="{{result.avatar_url}}" alt="" width="50" height="50"><p class="artist-name">
+          {{result.login}}</p></li>
+      
+      </ul>
+      
+       </form>
+         </div>
+        </div>
+   
+  </nav>
+  

@@ -1,0 +1,8 @@
+<div *ngFor="let follower of userfollowing|paginate: config" >
+    <div class="follower-style">
+    <img class="image-style" src="{{follower.avatar_url}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{follower.login}}
+    </div>
+    <hr>
+  </div>
+  
+  <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>

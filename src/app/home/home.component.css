@@ -1,0 +1,68 @@
+
+
+
+.formsize{
+  width:75%;
+  height:56px;
+  margin-bottom: 1rem;
+  border: 1px solid #2c87c5 ;
+}
+.button{
+  height: 56px;
+  width: 15%;
+  background-color: #2c87c5;
+  color:white;
+}
+.heading{
+  font-size: 4rem;
+  text-align: center;
+  color: #2c87c5;
+  padding-top:2rem;
+}
+.card-prop{
+  text-align: center;
+  margin-top: 25%;
+  -webkit-box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px grey;
+} 
+.filter-select{
+  background-color: white;
+  width:100%;
+  list-style: none;
+  font-size: 1.1em;
+  color: rgb(105, 105, 105);
+  border: 1px solid #eee;
+  border-top: none;
+  position: absolute;
+  max-height:450px ; 
+   overflow-y: auto;
+  background: #fff;
+}
+.filter-select-list img {
+  margin-right: 30px;
+}
+
+.filter-select-list:hover {
+  background:  #C0C0C0;
+  color: #fff
+}
+
+.filter-select-list {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.navbar-light .navbar-brand:hover {
+  color:white;
+}
+.navbar-brandstyle{
+  color:white;
+  text-decoration: none !important;
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .heading{
+    font-size: 2rem;
+  }
+}

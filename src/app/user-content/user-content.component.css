@@ -1,0 +1,55 @@
+.image-styling{
+  width:300px;
+  height:300px;
+  
+  padding:30px 30px 30px 30px;
+  border-radius: 100%;
+  
+  
+}
+.name-styling{
+    background-color: #184d47;
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
+  
+}
+.card-style{
+    border-radius:10px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    margin-top: 40px;
+    padding-left: 10px;
+}
+
+/* .repo-style{
+    padding: 5px 0px 10px 0px;
+} */
+.user-detail{
+   margin-top: 50px;
+   width: fit-content;
+   -webkit-box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px grey;
+}
+
+.count{
+    background-color: darkslategrey;
+    color:white;
+    border-radius: 100%;
+    padding:  5px 10px;
+}
+.mode{
+cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .user-detail{
+        margin-left: auto;
+        margin-right:auto;
+        margin-bottom: 20px;
+    }
+    .image-styling{
+        width:200px;
+        height:200px;
+    }
+}
